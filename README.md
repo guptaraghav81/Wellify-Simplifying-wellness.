@@ -17,8 +17,14 @@ A cloud-powered, machine learning-based health and fitness recommendation system
 
 3. **Cloud Deployment (AWS):**
    - **Elastic Beanstalk:** Deployed the Flask app on Elastic Beanstalk for automatic scaling and simplified infrastructure management.
+   - **EC2:** Underlying compute instances managed by Elastic Beanstalk.
+   - **VPC:** Secure cloud environment for networking.
+   - **ALB (Application Load Balancer):** Distributes incoming traffic across EC2 instances.
+   - **ASG (Auto Scaling Group):** Automatically adjusts the number of EC2 instances based on traffic.
+   - **Route 53:** Manages domain name (raghav.cloud) for easy access.
+   - **ACM (AWS Certificate Manager):** Provides SSL/TLS certificates for secure HTTPS access.
+   - **CloudWatch:** Monitors logs and application health.
    - **S3 (Optional):** Stored trained model files and static assets.
-   - **CloudWatch:** Monitored logs and application health.
    - **RDS (Optional):** Integrated with **AWS RDS** for storing user data and recommendations.
 
 ## 📈 Tech Stack
@@ -27,6 +33,8 @@ A cloud-powered, machine learning-based health and fitness recommendation system
 - **Frontend:** HTML, CSS, JavaScript
 - **Cloud Services:**
   - **Elastic Beanstalk:** Deployment and scaling
+  - **EC2, ALB, ASG, VPC:** Compute and networking
+  - **Route 53 & ACM:** Domain management and SSL/TLS security
   - **S3:** Static asset and model file storage
   - **CloudWatch:** Monitoring and logging
   - **RDS:** Data persistence (optional)
@@ -36,6 +44,7 @@ A cloud-powered, machine learning-based health and fitness recommendation system
 2. **Model Prediction:** Pretrained Random Forest models generate personalized exercise and diet plans.
 3. **Results Display:** The web app presents tailored recommendations in a clean, user-friendly format.
 4. **Cloud Scaling:** Elastic Beanstalk handles traffic spikes, ensuring seamless performance.
+5. **Domain & Security:** Route 53 manages the custom domain, and ACM secures the app with HTTPS.
 
 ## 📝 Deployment Steps
 1. **Fork and Clone:**
@@ -58,10 +67,14 @@ A cloud-powered, machine learning-based health and fitness recommendation system
    eb create wellify-env
    eb deploy
    ```
-5. **Access the App:**
-   - Elastic Beanstalk will provide a URL to access your personalized health and fitness app.
+5. **Set Up Custom Domain:** (Optional, if using Route 53)
+   - Configure your **Route 53** domain (raghav.cloud) to point to the Elastic Beanstalk environment.
+   - Request and attach an **SSL certificate** from **ACM** for HTTPS security.
 
-## 🔧 Future Enhancements
+6. **Access the App:**
+   - Open **raghav.cloud** in your browser to access the Wellify app.
+
+## 🛠️ Future Enhancements
 - Integrate **AWS Lambda** for serverless prediction.
 - Implement **API Gateway** for managing endpoints.
 - Add **CI/CD Pipeline** using **AWS CodePipeline** for continuous deployment.
@@ -71,11 +84,13 @@ A cloud-powered, machine learning-based health and fitness recommendation system
 - **Cloud Powered:** Scalable and reliable with AWS.
 - **Easy Deployment:** Elastic Beanstalk simplifies infrastructure management.
 - **Real-Time Predictions:** Fast and accurate health plans at your fingertips.
+- **Secure & Accessible:** Custom domain with SSL/TLS security (raghav.cloud).
 
 ---
 Deployed with ❤️ on **AWS Elastic Beanstalk** | Made with ☕ by **Raghav Gupta**  
 
-**Ready to Transform Your Health Journey? Try Wellify Now!** 💪 <br>
-Credit :-> https://github.com/bhumin-patel029 <br>
-URL :-> raghav.cloud
+**Ready to Transform Your Health Journey? Try Wellify Now!** 💪  
+**URL:** [raghav.cloud](https://raghav.cloud)  
+
+**Credit:** 👉 [GitHub: bhumin-patel029](https://github.com/bhumin-patel029)
 
