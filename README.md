@@ -76,5 +76,6 @@ A cloud-powered, machine learning-based health and fitness recommendation system
 Deployed with ❤️ on **AWS Elastic Beanstalk** | Made with ☕ by **Raghav Gupta**  
 
 **Ready to Transform Your Health Journey? Try Wellify Now!** 💪 <br>
-Credit :-> https://github.com/bhumin-patel029
+Credit :-> https://github.com/bhumin-patel029 <br>
+URL :-> raghav.cloud
 
