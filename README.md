@@ -73,7 +73,7 @@ A cloud-powered, machine learning-based health and fitness recommendation system
 - **Real-Time Predictions:** Fast and accurate health plans at your fingertips.
 
 ---
-Deployed with ❤️ on **AWS Elastic Beanstalk** | Made with ☕ by **Raghu Gupta**  
+Deployed with ❤️ on **AWS Elastic Beanstalk** | Made with ☕ by **Raghav Gupta**  
 
 **Ready to Transform Your Health Journey? Try Wellify Now!** 💪
 
